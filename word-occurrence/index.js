@@ -11,6 +11,5 @@ module.exports = (word, phrase) => {
             count++
         }
     }
-    console.log(count);
     return count
 }
