@@ -7,5 +7,14 @@
 
 module.exports = (input) => {
     // Start coding below this line
+    let reversedStr = '';
+    // clean the data: make it all lowercase and remove spaces
+    let newInput = input.toLowerCase().replace(/\s/g, '');
+
+    for (let i = newInput.length -1; i >= 0; i--){
+        reversedStr += newInput[i]
+    }
+
+    return reversedStr === newInput;
 }
 

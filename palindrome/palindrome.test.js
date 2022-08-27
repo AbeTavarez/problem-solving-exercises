@@ -10,7 +10,10 @@ describe('isPalindrome()', () => {
   })
 
   test('should return true', () => {
-    expect(isPalindrome('nurses run')).toBe('nursesrun')
+    expect(isPalindrome('nurses run')).toBe(true)
+  })
+  test('should return true', () => {
+    expect(isPalindrome('nur ses run')).toBe(true)
   })
   
 })
